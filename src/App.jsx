@@ -4,9 +4,10 @@ function App() {
 
   return (
     <>
-      <div>
-        
-      </div>
+    <div className='grid grid-cols-5'>
+      <div className='col-span-1'></div>
+      <div className='col-span-4'></div>
+    </div>
     </>
   )
 }
