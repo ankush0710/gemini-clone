@@ -1,1 +1,18 @@
-export const URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=AIzaSyAX7nBQKqUoCt-CDS2VP9e53LqGXMup2pw" 
+export const URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=AIzaSyBIPLPbdAS6Gs_Ewcz4cK2qj4Oqbegmg0M" 
+
+
+// curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent" \
+//   -H 'Content-Type: application/json' \
+//   -H 'X-goog-api-key: AIzaSyBIPLPbdAS6Gs_Ewcz4cK2qj4Oqbegmg0M' \
+//   -X POST \
+//   -d '{
+//     "contents": [
+//       {
+//         "parts": [
+//           {
+//             "text": "Explain how AI works in a few words"
+//           }
+//         ]
+//       }
+//     ]
+//   }'
