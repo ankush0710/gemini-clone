@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { URL } from "./constant";
+import DisplayAnswer from "./components/DisplayResult";
 
 function App() {
   const [question, setQuestion] = useState("");
@@ -21,7 +22,7 @@ function App() {
 
     response = await response.json();
     const displayAnswer = response.candidates[0].content.parts[0].text;
-    displayAnswer.split("* ").map((item)=>item.trim());
+    displayAnswer.split("* ").map((item) => item.trim());
     // console.log(response.candidates[0].content.parts[0].text);
     setResult(displayAnswer);
   };
@@ -34,7 +35,14 @@ function App() {
         <div className="col-span-4 p-10">
           <div id="constainer" className="h-120 lg:h-135">
             <div className="text-white">
-              
+              <ul>
+                {result &&
+                  result.map((item, index) => {
+                    <li>
+                      <DisplayAnswer answer={item} key={index} />
+                    </li>;
+                  })}
+              </ul>
             </div>
           </div>
           <div className="flex mx-auto w-1/2 h-16 bg-zinc-800 p-1 pr-5 text-white rounded-4xl border border-zinc-700">

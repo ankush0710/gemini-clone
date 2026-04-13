@@ -1,10 +1,10 @@
 import React from 'react';
 
-const DisplayResult = ({ans, key}) => {
+const DisplayResult = ({answer, key}) => {
     return(
         <>
         <div>
-
+            {answer}
         </div>
         </>
     )
