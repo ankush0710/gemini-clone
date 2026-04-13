@@ -1,4 +1,4 @@
-export const URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=AIzaSyCVODfB4QqobYTvTzXmBoDclpL12MP-AsU" 
+export const URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?" 
 
 
 // curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent" \
