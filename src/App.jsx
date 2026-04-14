@@ -30,18 +30,18 @@ function App() {
   return (
     <>
       <div className="grid grid-cols-5 h-screen text-center">
-        <div className="col-span-1 bg-zinc-900"></div>
+        <div className="col-span-1 bg-zinc-800"></div>
         {/* main container consist answers and input box for question  */}
-        <div className="col-span-4 p-10">
-          <div id="constainer" className="h-120 lg:h-135">
+        <div className="col-span-4 p-10 bg-zinc-900">
+          <div id="constainer" className="h-120 overflow-scroll lg:h-135">
             <div className="text-zinc-300">
               <ul>
                 {result &&
                   result.map((item, index) => {
                     return (
                       <>
-                        <li className="text-left p-10">
-                          <DisplayResult answer={item} key={index} />
+                        <li key={index} className="text-left p-2">
+                          <DisplayResult answer={item} index={index} />
                         </li>
                       </>
                     );
