@@ -21,27 +21,29 @@ function App() {
     });
 
     response = await response.json();
-    const displayAnswer = response.candidates[0].content.parts[0].text;
-    displayAnswer.split("* ").map((item) => item.trim());
+    let displayAnswer = response.candidates[0].content.parts[0].text;
+    displayAnswer = displayAnswer.split("* ").map((item) => item.trim()).filter((item)=>item !== "");
     // console.log(response.candidates[0].content.parts[0].text);
-    setResult(displayAnswer);
+    setResult(displayAnswer); 
   };
 
   return (
     <>
       <div className="grid grid-cols-5 h-screen text-center">
-        <div className="col-span-1 bg-zinc-400"></div>
+        <div className="col-span-1 bg-zinc-900"></div>
         {/* main container consist answers and input box for question  */}
         <div className="col-span-4 p-10">
           <div id="constainer" className="h-120 lg:h-135">
-            <div className="text-white">
+            <div className="text-zinc-300">
               <ul>
                 {result &&
                   result.map((item, index) => {
                     return (
-                      <li>
-                        <DisplayResult answer={item} key={index} />
-                      </li>
+                      <>
+                        <li className="text-left p-10">
+                          <DisplayResult answer={item} key={index} />
+                        </li>
+                      </>
                     );
                   })}
               </ul>
