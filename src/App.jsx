@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { URL } from "./constant";
-import DisplayAnswer from "./components/DisplayResult";
+import DisplayResult from "./components/DisplayResult";
 
 function App() {
   const [question, setQuestion] = useState("");
@@ -38,9 +38,11 @@ function App() {
               <ul>
                 {result &&
                   result.map((item, index) => {
-                    <li>
-                      <DisplayAnswer answer={item} key={index} />
-                    </li>;
+                    return (
+                      <li>
+                        <DisplayResult answer={item} key={index} />
+                      </li>
+                    );
                   })}
               </ul>
             </div>

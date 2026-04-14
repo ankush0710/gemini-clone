@@ -10,4 +10,4 @@ const DisplayResult = ({answer, key}) => {
     )
 }
 
-export default DisplayAnswer;
+export default DisplayResult;
