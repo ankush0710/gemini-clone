@@ -33,7 +33,7 @@ function App() {
         <div className="col-span-1 bg-zinc-800"></div>
         {/* main container consist answers and input box for question  */}
         <div className="col-span-4 p-10 bg-zinc-900">
-          <div id="constainer" className="h-120 overflow-scroll lg:h-135">
+          <div id="constainer" className="h-110 overflow-scroll lg:h-135">
             <div className="text-zinc-300">
               <ul>
                 {result &&
