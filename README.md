@@ -1,18 +1,72 @@
-# React + Vite
+# 🤖 Gemini Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Gemini AI Clone** built using **React.js** and **Tailwind CSS**, designed to simulate an AI-powered conversational interface similar to Google Gemini.
 
-Currently, two official plugins are available:
+This project allows users to ask questions and receive AI-generated responses in a clean, chat-based UI. It focuses on real-time interaction, dynamic state management, and responsive frontend design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- 💬 Chat-based conversational UI
+- ⚡ Real-time Gemini API response handling
+- 🔄 Dynamic question & answer rendering
+- 🧠 AI-generated content display
+- 🎨 Modern responsive UI with Tailwind CSS
+- ⏳ Loading state while fetching response
+- 📜 Scrollable chat history
+- ❌ Error handling for failed API requests
+- 🔐 Secure API integration ready for backend support
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js**
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+- **Google Gemini API**
+- **Fetch API**
+- **React Hooks**
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│── components/
+│   └── DisplayResult.jsx
+│── App.jsx
+│── constant.js
+```
+
+---
+
+## Installation
+
+1. Clone the respository
+
+```bash
+git clone https://github.com/your-username/gemini-clone.git
+```
+
+2. Move into project folder
+
+```bash
+cd gemini-clone
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start development server
+
+```bash
+npm run dev
+```
+
+***
