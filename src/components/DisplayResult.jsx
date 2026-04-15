@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { checkSubHeading, replaceHeading } from "../subHeading";
 // give alternates option to say "good morning"
 
-const DisplayResult = ({ answer, index }) => {
+const DisplayResult = ({ answer, index, totalResult }) => {
   const [heading, setHeading] = useState("false");
   const [paragraph, setParagraph] = useState(answer);
 
@@ -15,8 +15,8 @@ const DisplayResult = ({ answer, index }) => {
 
   return (
     <>
-      {index == 0 ? (
-        <span className="pt-1 text-xl block text-white">{paragraph}</span>
+      {index == 0 && totalResult == 1 ? (
+        <span className="pt-1 text-2xl block text-white">{paragraph}</span>
       ) : heading ? (
         <span className="pt-1 text-lg block text-white">{paragraph}</span>
       ) : (
